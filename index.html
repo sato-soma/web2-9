@@ -5,19 +5,21 @@
   <title>はじめてのjQuery</title>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
-      $(function(){
-        $("#toggle").click(function(){
-          $("#target").show("slow");
+      $(document).ready(function(){
+        
+        $("button").click(function(){
+          $("p").show("slow");
           });
+        
         });
     
   </script>
   <style>
-    target{background:red; }
+    p { background:red; }
     </style>
 </head>
 <body
-  <button id="toggle">ボタン</button>
-<target style="display: none">Hello</target>
+  <button>ボタン</button>
+<p style="display: none">Hello</target>
 </body>
 </html>
