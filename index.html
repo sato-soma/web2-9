@@ -6,20 +6,27 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript">
       $(document).ready(function(){
-        
-        $("button").click(function(){
-          $("p").show("slow");
-          });
-        
-        });
+         $(document.body).click(function(){
+       if $("div:first").is(":hidden")){
+         $("div").slideDown("slow");
+       }else{
+        $("div").hide();
+       }
+      });
+    });
     
   </script>
   <style>
-    p { background:red; }
+    div { background:#de9a44; margin:3px; width:120px;
+    height:60px; display:none; float:left; }
     </style>
 </head>
 <body>
-  <button id="p">ボタン</button>
-<p style="display: none">Hello</target>
+  この文字にクリックしてね
+  <div></div>
+  
+  <div></div>
+  
+  <div></div>
 </body>
 </html>
